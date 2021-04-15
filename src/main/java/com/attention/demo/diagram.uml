@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="332.2229166666666" y="822.0">com.attention.demo.Repository.IUserRepo</node>
+    <node x="698.7979166666667" y="574.0">com.attention.demo.Repository.IAudioRepo</node>
+    <node x="384.79791666666665" y="474.0">com.attention.demo.Models.User</node>
+    <node x="293.68125" y="948.0">com.attention.demo.Controllers.AuthorizationController</node>
+    <node x="497.23541666666665" y="0.0">com.attention.demo.Models.Transcription</node>
+    <node x="0.0" y="292.5">com.attention.demo.Repository.ITranscriptionRepo</node>
+    <node x="0.0" y="1180.0">com.attention.demo.Controllers.AudioController</node>
+    <node x="213.0" y="1180.0">com.attention.demo.Controllers.UserController</node>
+    <node x="515.4041666666667" y="237.0">com.attention.demo.Models.Audio</node>
+    <node x="322.0" y="281.0">com.attention.demo.Models.Role</node>
+    <node x="806.7979166666667" y="32.0">com.attention.demo.Controllers.TranscriptionController</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.attention.demo.Models.Audio" target="com.attention.demo.Models.User">
+      <point x="-32.375" y="93.5" />
+      <point x="612.5291666666667" y="449.0" />
+      <point x="590.5979166666666" y="449.0" />
+      <point x="58.799999999999955" y="-149.0" />
+    </edge>
+    <edge source="com.attention.demo.Controllers.AuthorizationController" target="com.attention.demo.Models.Role">
+      <point x="-133.125" y="-93.5" />
+      <point x="338.05625" y="923.0" />
+      <point x="310.9729166666666" y="923.0" />
+      <point x="310.9729166666666" y="449.0" />
+      <point x="347.5" y="449.0" />
+      <point x="-51.0" y="49.5" />
+    </edge>
+    <edge source="com.attention.demo.Models.Audio" target="com.attention.demo.Models.Transcription">
+      <point x="-97.125" y="-93.5" />
+      <point x="547.7791666666667" y="217.0" />
+      <point x="556.6354166666666" y="217.0" />
+      <point x="-39.60000000000002" y="93.5" />
+    </edge>
+    <edge source="com.attention.demo.Repository.ITranscriptionRepo" target="com.attention.demo.Models.Transcription">
+      <point x="0.0" y="-38.0" />
+      <point x="151.0" y="217.0" />
+      <point x="517.0354166666666" y="217.0" />
+      <point x="-79.19999999999999" y="93.5" />
+    </edge>
+    <edge source="com.attention.demo.Repository.IAudioRepo" target="com.attention.demo.Models.Audio">
+      <point x="0.0" y="-49.0" />
+      <point x="818.2979166666667" y="449.0" />
+      <point x="742.0291666666667" y="449.0" />
+      <point x="97.125" y="93.5" />
+    </edge>
+    <edge source="com.attention.demo.Controllers.AuthorizationController" target="com.attention.demo.Models.User">
+      <point x="133.125" y="-93.5" />
+      <point x="604.30625" y="923.0" />
+      <point x="555.7229166666666" y="923.0" />
+      <point x="555.7229166666666" y="797.0" />
+      <point x="629.7979166666667" y="797.0" />
+      <point x="98.0" y="149.0" />
+    </edge>
+    <edge source="com.attention.demo.Controllers.AuthorizationController" target="com.attention.demo.Repository.IUserRepo">
+      <point x="-44.375" y="-93.5" />
+      <point x="426.80625" y="923.0" />
+      <point x="433.2229166666666" y="923.0" />
+      <point x="0.0" y="38.0" />
+    </edge>
+    <edge source="com.attention.demo.Models.User" target="com.attention.demo.Models.Role">
+      <point x="-117.60000000000002" y="-149.0" />
+      <point x="414.19791666666663" y="449.0" />
+      <point x="398.5" y="449.0" />
+      <point x="0.0" y="49.5" />
+    </edge>
+    <edge source="com.attention.demo.Models.Transcription" target="com.attention.demo.Models.Audio">
+      <point x="39.59999999999991" y="93.5" />
+      <point x="635.8354166666666" y="217.0" />
+      <point x="677.2791666666667" y="217.0" />
+      <point x="32.375" y="-93.5" />
+    </edge>
+    <edge source="com.attention.demo.Models.User" target="com.attention.demo.Models.Audio">
+      <point x="0.0" y="-149.0" />
+      <point x="531.7979166666667" y="449.0" />
+      <point x="547.7791666666667" y="449.0" />
+      <point x="-97.125" y="93.5" />
+    </edge>
+    <edge source="com.attention.demo.Repository.IUserRepo" target="com.attention.demo.Models.User">
+      <point x="0.0" y="-38.0" />
+      <point x="-98.0" y="149.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="572.0" y="335.0" />
+  <SelectedNodes>
+    <node>com.attention.demo.Controllers.TranscriptionController</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Constructors</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+    <Category>Inner Classes</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
