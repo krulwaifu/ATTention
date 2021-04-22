@@ -11,6 +11,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import java.util.Collections;
@@ -21,15 +22,16 @@ import java.util.concurrent.Future;
 
 @Controller
 public class AuthorizationController {
+
     ExecutorService threadExecutor = Executors.newCachedThreadPool();
 
     @Autowired
     private IUserRepo userRepository;
 
-    @PostMapping("/login")
-    public String loginPage(@RequestParam(name = "username") String username){
-        User user = userRepository.findByUsername(username);
-        return "redirect:/profilePage/{user.getId()}";
+
+    @GetMapping("/login")
+    public String loginPage(){
+        return "auth";
     }
 
     @GetMapping("/registration")

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WelCUM</title>
+    <link rel="stylesheet" href="../css/auth.css">
+</head>
+<body>
+<section class="forms-section">
+    <h1 class="section-title">Animated Forms</h1>
+    <div class="forms">
+        <div class="form-wrapper is-active" >
+            <button type="button" class="switcher switcher-login">
+                Login
+                <span class="underline"></span>
+            </button>
+            <form class="form form-login" method="post" action="/login">
+                <fieldset>
+                    <legend>Please, enter your email and password for login.</legend>
+                    <div class="input-block">
+                        <label for="login-email">Username</label>
+                        <input id="login-email" type="text" name="username" required>
+                    </div>
+                    <div class="input-block">
+                        <label for="login-password">Password</label>
+                        <input id="login-password" type="password" name="password" required>
+                    </div>
+                </fieldset>
+                <button type="submit" class="btn-login">Login</button>
+            </form>
+        </div>
+        <div class="form-wrapper">
+            <button type="button" class="switcher switcher-signup">
+                Sign Up
+                <span class="underline"></span>
+            </button>
+            <form class="form form-signup" action="/registration" method="post">
+                <fieldset>
+                    <legend>Please, enter your email, password and password confirmation for sign up.</legend>
+                    <div class="input-block">
+                        <label for="signup-email">E-mail</label>
+                        <input id="signup-email" type="email" name="email" required>
+                    </div>
+                    <div class="input-block">
+                        <label for="signup-password">Password</label>
+                        <input id="signup-password" type="password" name="password" required>
+                    </div>
+                    <div class="input-block">
+                        <label for="signup-firstname">First Name</label>
+                        <input id="signup-firstname" type="text" name="firstname" required>
+                    </div>
+                    <div class="input-block">
+                        <label for="signup-lastname">Last Name</label>
+                        <input id="signup-lastname" type="text" name="lastname" required>
+                    </div>
+                </fieldset>
+                <button type="submit" class="btn-signup">Continue</button>
+            </form>
+        </div>
+    </div>
+</section>
+<script type="text/javascript" src="../js/auth.js">
+</script>
+</body>
+</html>

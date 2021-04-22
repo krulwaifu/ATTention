@@ -1,25 +1,24 @@
 package com.attention.demo.Models;
 
 import javax.persistence.*;
-import javax.validation.constraints.NotNull;
-import java.util.Set;
 
 @Entity
 public class Audio {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Basic(optional = false)
-    @NotNull
     private Long id;
     private String file_name;
+    private String music_name;
     @ManyToOne(cascade = CascadeType.ALL,fetch = FetchType.EAGER)
     private User user;
     @OneToOne(cascade = CascadeType.ALL,fetch = FetchType.EAGER)
     private Transcription transcription;
 
-    public Audio(@NotNull Long id, String file_name, User user, Transcription transcription) {
+    public Audio(Long id, String file_name, User user, Transcription transcription) {
         this.id = id;
         this.file_name = file_name;
+        this.music_name = music_name;
         this.user = user;
         this.transcription = transcription;
     }
@@ -28,9 +27,14 @@ public class Audio {
         this.user = user;
         this.transcription = transcription;
     }
-    public Audio( String file_name, User user) {
+    public Audio( String file_name,String music_name, User user) {
         this.file_name = file_name;
+        this.music_name = music_name;
         this.user = user;
+    }
+
+    public Audio() {
+
     }
 
     public Long getId() {

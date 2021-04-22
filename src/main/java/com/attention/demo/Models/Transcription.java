@@ -1,14 +1,12 @@
 package com.attention.demo.Models;
 
 import javax.persistence.*;
-import javax.validation.constraints.NotNull;
 
 @Entity
 public class Transcription {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Basic(optional = false)
-    @NotNull
     private Long id;
     private String text;
     @OneToOne(cascade = CascadeType.ALL,fetch = FetchType.EAGER)
@@ -16,7 +14,7 @@ public class Transcription {
     public Transcription(){
 
     }
-    public Transcription(@NotNull Long id, String text) {
+    public Transcription(Long id, String text) {
         this.id = id;
         this.text = text;
     }
