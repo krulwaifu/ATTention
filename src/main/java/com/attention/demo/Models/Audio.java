@@ -8,28 +8,29 @@ public class Audio {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Basic(optional = false)
     private Long id;
-    private String file_name;
-    private String music_name;
+    private String fileName;
+    private String musicName;
     @ManyToOne(cascade = CascadeType.ALL,fetch = FetchType.EAGER)
     private User user;
     @OneToOne(cascade = CascadeType.ALL,fetch = FetchType.EAGER)
     private Transcription transcription;
 
-    public Audio(Long id, String file_name, User user, Transcription transcription) {
+    public Audio(Long id, String file_name,String musicName, User user, Transcription transcription) {
         this.id = id;
-        this.file_name = file_name;
-        this.music_name = music_name;
+        this.fileName = file_name;
+        this.musicName = musicName;
         this.user = user;
         this.transcription = transcription;
     }
-    public Audio( String file_name, User user, Transcription transcription) {
-        this.file_name = file_name;
+    public Audio( String file_name, User user,String music_name , Transcription transcription) {
+        this.fileName = file_name;
         this.user = user;
         this.transcription = transcription;
+        this.musicName = music_name;
     }
     public Audio( String file_name,String music_name, User user) {
-        this.file_name = file_name;
-        this.music_name = music_name;
+        this.fileName = file_name;
+        this.musicName = music_name;
         this.user = user;
     }
 
@@ -45,12 +46,12 @@ public class Audio {
         this.id = id;
     }
 
-    public String getFile_name() {
-        return file_name;
+    public String getFileName() {
+        return fileName;
     }
 
-    public void setFile_name(String file_name) {
-        this.file_name = file_name;
+    public void setFileName(String fileName) {
+        this.fileName = fileName;
     }
 
     public User getUser() {

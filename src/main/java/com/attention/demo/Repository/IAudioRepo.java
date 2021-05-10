@@ -10,4 +10,6 @@ import java.util.Set;
 public interface IAudioRepo extends JpaRepository<Audio,Long> {
     Audio getAudioById(Long id);
     Set<Audio> getAllByUser_Id(Long id);
+    Audio findByMusicNameOrFileName(String music_name, String file_name);
+    Audio findByMusicName(String music_name);
 }
