@@ -67,8 +67,8 @@ public class AuthorizationController {
         userRepository.save(userForm);
         return "auth";
     }
-    @PostMapping("/auth/{username}/{password}")
-    public Boolean auth(@PathVariable String username,
+    @GetMapping("/auth/{username}/{password}")
+    public Boolean authREST(@PathVariable String username,
                         @PathVariable String password){
         User userForm = new User(username,new BCryptPasswordEncoder().encode(password));
         User isExist = userRepository.findByUsernameAndPassword(username,userForm.getPassword());

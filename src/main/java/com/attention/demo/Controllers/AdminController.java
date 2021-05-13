@@ -9,6 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
@@ -68,7 +69,7 @@ public class AdminController {
         return "admin";
     }
 
-    @PostMapping("/admin/allUsers")
+    @GetMapping("/admin/allUsers")
     public String showUsers(Model model){
         List<User> user = userRepository.findAll();
         model.addAttribute("user",user);

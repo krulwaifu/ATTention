@@ -3,22 +3,24 @@
   <ID>JAVA</ID>
   <OriginalElement />
   <nodes>
-    <node x="0.0" y="0.0">com.attention.demo.Models.User</node>
-    <node x="0.0" y="715.0">com.attention.demo.Repository.IUserRepo</node>
-    <node x="0.0" y="573.0">com.attention.demo.Repository.IAudioRepo</node>
-    <node x="339.0" y="0.0">com.attention.demo.Controllers.AuthorizationController</node>
-    <node x="304.0" y="342.0">com.attention.demo.Models.Transcription</node>
-    <node x="247.0" y="715.0">com.attention.demo.Controllers.AudioController</node>
-    <node x="284.0" y="573.0">com.attention.demo.Repository.ITranscriptionRepo</node>
-    <node x="448.0" y="715.0">com.attention.demo.Controllers.UserController</node>
-    <node x="0.0" y="342.0">com.attention.demo.Models.Audio</node>
-    <node x="547.0" y="342.0">com.attention.demo.Models.Role</node>
-    <node x="631.0" y="573.0">com.attention.demo.Controllers.TranscriptionController</node>
+    <node x="0.0" y="804.0">com.attention.demo.Repository.IUserRepo</node>
+    <node x="619.0" y="595.0">com.attention.demo.Repository.IAudioRepo</node>
+    <node x="14.0" y="-26.0">com.attention.demo.Models.User</node>
+    <node x="0.0" y="342.0">com.attention.demo.Controllers.AuthorizationController</node>
+    <node x="400.0" y="342.0">com.attention.demo.Models.Transcription</node>
+    <node x="355.0" y="804.0">com.attention.demo.Repository.ITranscriptionRepo</node>
+    <node x="0.0" y="595.0">com.attention.demo.Controllers.AudioController</node>
+    <node x="0.0" y="946.0">com.attention.demo.Controllers.UserController</node>
+    <node x="339.0" y="0.0">com.attention.demo.Models.Audio</node>
+    <node x="421.0" y="595.0">com.attention.demo.Models.Role</node>
+    <node x="702.0" y="804.0">com.attention.demo.Controllers.TranscriptionController</node>
   </nodes>
   <notes />
   <edges />
-  <settings layout="Hierarchic Group" zoom="1.0" x="914.0" y="450.0" />
-  <SelectedNodes />
+  <settings layout="Hierarchic Group" zoom="1.0" x="350.0" y="246.0" />
+  <SelectedNodes>
+    <node>com.attention.demo.Models.User</node>
+  </SelectedNodes>
   <Categories>
     <Category>Fields</Category>
     <Category>Constructors</Category>
